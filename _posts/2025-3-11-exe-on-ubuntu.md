@@ -1,9 +1,8 @@
-
 ---
 title: تشغيل برامج ويندوز على أوبونتو باستخدام واين وبوليت لينكس
-date: 2025-03-12 15:00 +0330
-categories: [Linux, Open Source, Development]
-tags: [ubuntu, wine, playonlinux, windows, compatibility]
+date: 2025-03-11 20:00 +0330
+categories: [Linux, Open Source, Development, Productivity]
+tags: [ubuntu, linux, opensource, development, security, customization]
 author: Ismael Farah
 ---
 
