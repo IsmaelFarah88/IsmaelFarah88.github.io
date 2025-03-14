@@ -3,49 +3,24 @@ layout: home
 # Index page
 ---
 
-<div class="home">
-  <h1>أهلاً بك في مدونتي الشخصية</h1>
-  
-  <p>هذه مدونة شخصية أشارك فيها أفكاري ومشاريعي وخبراتي. أتمنى أن تجد فيها ما يفيدك ويلهمك.</p>
-  
-  <h2>آخر المنشورات</h2>
+<h1>أهلاً بك في مدونتي الشخصية</h1>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+<p>هذه مدونة شخصية أشارك فيها أفكاري ومشاريعي وخبراتي. أتمنى أن تجد فيها ما يفيدك ويلهمك.</p>
 
-  <!-- Pagination links -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; السابق</a>
-    {% else %}
-      <span>&laquo; السابق</span>
-    {% endif %}
+<h2>آخر المنشورات</h2>
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | relative_url }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
+<ul class="post-list">
+  {% for post in site.posts limit:5 %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </li>
+  {% endfor %}
+</ul>
 
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}">التالي &raquo;</a>
-    {% else %}
-      <span>التالي &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
+<div class="more-posts">
+  <a href="{{ '/blog/' | relative_url }}" class="btn">عرض جميع المقالات</a>
 </div> 

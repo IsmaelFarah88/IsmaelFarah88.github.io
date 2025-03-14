@@ -227,154 +227,157 @@ code {
 }
 
 // Custom styles
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cairo', sans-serif;
   line-height: 1.6;
-  direction: rtl;
-  text-align: right;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  margin-bottom: 1rem;
   color: #333;
+  background-color: #f8f9fa;
 }
 
-a {
-  color: #0077cc;
-  text-decoration: none;
-  
-  &:hover {
-    color: #005fa3;
-    text-decoration: underline;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 55.95px;
-  position: relative;
-  background-color: #f8f8f8;
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
-.site-title {
-  font-size: 26px;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header h2 {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
   font-weight: 300;
-  line-height: 54px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: right;
 }
 
-.site-nav {
-  float: left;
-  line-height: 54px;
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .post-list {
-  margin-left: 0;
   list-style: none;
-  
-  > li {
-    margin-bottom: 30px;
-  }
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
 
 .post-meta {
-  font-size: 14px;
-  color: #828282;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .post-link {
-  display: block;
-  font-size: 24px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.post-content {
-  margin-bottom: 30px;
-  
-  h2 {
-    font-size: 32px;
-  }
-  
-  h3 {
-    font-size: 26px;
-  }
-  
-  h4 {
-    font-size: 20px;
-  }
+.post-link:hover {
+  text-decoration: underline;
 }
 
-// Pagination styles
 .pagination {
-  margin: 2rem 0;
+  margin-top: 30px;
   text-align: center;
+}
+
+.pagination a, .pagination span, .pagination em {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.pagination a {
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination em {
+  background-color: #2c3e50;
+  color: #fff;
+  font-style: normal;
+}
+
+.pagination span {
+  color: #999;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px 0;
+  color: #666;
+  text-align: center;
+}
+
+// RTL specific styles
+html[lang="ar"] {
+  direction: rtl;
   
-  a, span, em {
-    padding: 0.5rem 1rem;
-    margin: 0 0.25rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: inline-block;
-  }
-  
-  a {
-    background-color: #fff;
-    
-    &:hover {
-      background-color: #f8f8f8;
-      text-decoration: none;
-    }
-  }
-  
-  em {
-    background-color: #0077cc;
-    color: white;
-    font-style: normal;
-  }
-  
-  span {
-    color: #aaa;
+  nav li {
+    margin-right: 20px;
+    margin-left: 0;
   }
 }
 
-// Contact form styles
-form {
-  margin: 2rem 0;
-  
-  div {
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  textarea {
-    height: 150px;
-  }
-  
-  button {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    
-    &:hover {
-      background-color: #005fa3;
-    }
-  }
+.btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  text-decoration: none;
+}
+
+.more-posts {
+  margin-top: 30px;
+  text-align: center;
 } 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% if site.lang == "ar" %}
+    <style>
+      body {
+        direction: rtl;
+        text-align: right;
+      }
+    </style>
+    {% endif %}
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>{{ site.title }}</h1>
+        <h2>{{ site.tagline }}</h2>
+        <nav>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">الرئيسية</a></li>
+            {% for tab in site.tabs %}
+              <li><a href="{{ tab.url | relative_url }}">{{ tab.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+  </body>
+</html> 

@@ -1,8 +1,8 @@
 ---
 layout: blog
 title: المدونة
-icon: fas fa-pen-fancy
-order: 9
+icon: fas fa-blog
+order: 1
 ---
 
 # آخر المقالات والمنشورات

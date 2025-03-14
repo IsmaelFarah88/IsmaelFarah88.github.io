@@ -3,17 +3,17 @@ title: مدونتي الشخصية
 tagline: مدونة شخصية لمشاركة أفكاري ومشاريعي وخبراتي
 description: >-
   مدونة شخصية لمشاركة أفكاري ومشاريعي وخبراتي.
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ismaelfarah88.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: ar
 timezone: Asia/Riyadh
 
 # Author settings
 author:
-  name: اسمك هنا
-  email: your-email@example.com
-  twitter_username: username
-  github_username: username
+  name: Ismael farah
+  email: asmael.net.sy@gmail.com
+  twitter_username: ismael_farah1 
+  github_username: ismaelfarah88
   linkedin:
     username: username
     url: https://www.linkedin.com/in/username
@@ -21,22 +21,22 @@ author:
 
 # GitHub settings
 github:
-  username: username
+  username: ismaelfarah88
 
 # Twitter settings
 twitter:
-  username: username
+  username:  ismael_farah1
   card: summary
 
 # Google Analytics
 google_analytics:
-  id: # Google Analytics ID
+  id: G-RLRKJFET27 # Google Analytics ID
 
 # Theme settings
 theme: jekyll-theme-chirpy
 theme_mode: # [light|dark]
 img_cdn: ""
-avatar: /assets/img/avatar.jpg
+avatar: https://avatars.githubusercontent.com/u/167617802?v=4
 
 # The following settings are NECESSARY for the Chirpy theme to run:
 baseurl: ""
@@ -54,7 +54,7 @@ baseurl: ""
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/avatar.jpg
+avatar: https://avatars.githubusercontent.com/u/167617802?v=4
 
 # boolean type, the global switch for TOC in posts.
 toc: true
