@@ -1,0 +1,91 @@
+# The layout text of site
+
+# ----- Commons label -----
+layout:
+  post: منشور
+  category: تصنيف
+  tag: وسم
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: الرئيسية
+  categories: التصنيفات
+  tags: الوسوم
+  archives: الأرشيف
+  about: عن المدونة
+
+# the text displayed in the search bar & search results
+search:
+  hint: بحث
+  cancel: إلغاء
+  no_results: لم يتم العثور على نتائج!
+
+panel:
+  lastmod: تم التحديث مؤخراً
+  trending_tags: الوسوم الشائعة
+  toc: المحتويات
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: هذا المنشور مرخص بموجب :LICENSE_NAME بواسطة المؤلف.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: بعض الحقوق محفوظة.
+  verbose: >-
+    ما لم يُذكر خلاف ذلك، فإن منشورات المدونة على هذا الموقع مرخصة
+    بموجب ترخيص Creative Commons Attribution 4.0 International (CC BY 4.0) بواسطة المؤلف.
+
+meta: تم التصميم باستخدام :PLATFORM مع :THEME
+
+not_found:
+  statment: عذراً، لقد وصلت إلى عنوان URL غير موجود أو شيء ما خاطئ.
+  hint_template: حاول العودة إلى :HEAD_BAK
+  head_back: الصفحة الرئيسية
+  or: أو
+  try_search: ابحث
+
+# ----- Posts related labels -----
+post:
+  written_by: كتب بواسطة
+  posted: تم النشر
+  updated: تم التحديث
+  words: كلمات
+  pageview_measure: مشاهدات
+  read_time:
+    unit: دقيقة
+    prompt: قراءة
+  relate_posts: مزيد من القراءة
+  share: مشاركة
+  button:
+    next: الأحدث
+    previous: الأقدم
+    copy_code:
+      succeed: تم النسخ!
+    share_link:
+      title: نسخ الرابط
+      succeed: تم نسخ الرابط!
+  # pinned prompt of posts list on homepage
+  pin_prompt: مثبت
+
+# Date time format.
+# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
+df:
+  post:
+    strftime: '%d %b %Y'
+    dayjs: 'DD MMM YYYY'
+  archives:
+    strftime: '%b'
+    dayjs: 'MMM'
+
+# categories page
+categories:
+  category_measure:
+    singular: تصنيف
+    plural: تصنيفات
+  post_measure:
+    singular: منشور
+    plural: منشورات 

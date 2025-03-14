@@ -1,0 +1,256 @@
+---
+layout: page
+title: آراء العملاء
+icon: fas fa-comment-dots
+order: 11
+---
+
+# آراء وشهادات العملاء
+
+فيما يلي بعض الآراء والشهادات من العملاء الذين تعاملت معهم:
+
+<div class="testimonials-container">
+  <div class="testimonial">
+    <div class="testimonial-content">
+      <i class="fas fa-quote-right quote-icon"></i>
+      <p>لقد كان العمل مع [اسمك] تجربة رائعة. لقد فهم احتياجاتنا بسرعة وقدم حلولاً مبتكرة تجاوزت توقعاتنا. سنعمل معه بالتأكيد في المشاريع المستقبلية.</p>
+    </div>
+    <div class="testimonial-author">
+      <img src="/assets/img/testimonials/client1.jpg" alt="صورة العميل">
+      <div class="author-info">
+        <h3>أحمد محمد</h3>
+        <p>المدير التنفيذي، شركة ABC</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="testimonial">
+    <div class="testimonial-content">
+      <i class="fas fa-quote-right quote-icon"></i>
+      <p>أنا سعيد جداً بالنتائج التي حققها [اسمك] لموقعنا الإلكتروني. لقد زادت نسبة التحويل بنسبة 40% منذ إطلاق الموقع الجديد. إنه محترف ويلتزم بالمواعيد النهائية.</p>
+    </div>
+    <div class="testimonial-author">
+      <img src="/assets/img/testimonials/client2.jpg" alt="صورة العميل">
+      <div class="author-info">
+        <h3>سارة أحمد</h3>
+        <p>مديرة التسويق، شركة XYZ</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="testimonial">
+    <div class="testimonial-content">
+      <i class="fas fa-quote-right quote-icon"></i>
+      <p>لقد ساعدنا [اسمك] في تطوير تطبيق جوال معقد، وكان أداؤه استثنائياً. لقد تعامل مع التحديات بشكل احترافي وقدم حلولاً مبتكرة. أوصي به بشدة لأي مشروع تقني.</p>
+    </div>
+    <div class="testimonial-author">
+      <img src="/assets/img/testimonials/client3.jpg" alt="صورة العميل">
+      <div class="author-info">
+        <h3>محمد علي</h3>
+        <p>مدير تكنولوجيا المعلومات، شركة DEF</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="testimonial">
+    <div class="testimonial-content">
+      <i class="fas fa-quote-right quote-icon"></i>
+      <p>تعاملت مع [اسمك] في عدة مشاريع، وكان دائماً يقدم عملاً عالي الجودة. إنه يتميز بالاهتمام بالتفاصيل والقدرة على فهم متطلبات العمل بسرعة.</p>
+    </div>
+    <div class="testimonial-author">
+      <img src="/assets/img/testimonials/client4.jpg" alt="صورة العميل">
+      <div class="author-info">
+        <h3>ليلى خالد</h3>
+        <p>مؤسسة، شركة GHI</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="testimonial">
+    <div class="testimonial-content">
+      <i class="fas fa-quote-right quote-icon"></i>
+      <p>لقد ساعدنا [اسمك] في تحسين أداء موقعنا الإلكتروني وتحسين تجربة المستخدم. كانت النتائج مذهلة، وزاد عدد الزوار والمبيعات بشكل كبير.</p>
+    </div>
+    <div class="testimonial-author">
+      <img src="/assets/img/testimonials/client5.jpg" alt="صورة العميل">
+      <div class="author-info">
+        <h3>عمر حسن</h3>
+        <p>مدير المبيعات، شركة JKL</p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## إحصائيات رضا العملاء
+
+<div class="stats-container">
+  <div class="stat-item">
+    <div class="stat-value">98%</div>
+    <div class="stat-label">نسبة رضا العملاء</div>
+  </div>
+  
+  <div class="stat-item">
+    <div class="stat-value">50+</div>
+    <div class="stat-label">مشروع مكتمل</div>
+  </div>
+  
+  <div class="stat-item">
+    <div class="stat-value">30+</div>
+    <div class="stat-label">عميل سعيد</div>
+  </div>
+  
+  <div class="stat-item">
+    <div class="stat-value">4.9</div>
+    <div class="stat-label">متوسط التقييم</div>
+  </div>
+</div>
+
+## هل تريد مشاركة تجربتك معي؟
+
+إذا كنت قد عملت معي سابقاً وترغب في مشاركة تجربتك، يرجى [التواصل معي](/contact/) وسأكون سعيداً بإضافة شهادتك هنا.
+
+<style>
+.testimonials-container {
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-content {
+  position: relative;
+  padding: 25px;
+  background-color: #f8f9fa;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #e1e1e1;
+}
+
+.testimonial-content p {
+  margin: 0;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  padding: 15px 25px;
+  background-color: white;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 15px;
+}
+
+.author-info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.author-info p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.rating {
+  margin-top: 5px;
+  color: #ffc107;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+  
+  .stat-item {
+    margin: 5px 0;
+  }
+}
+</style> 

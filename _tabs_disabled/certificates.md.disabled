@@ -1,0 +1,193 @@
+---
+layout: page
+title: الشهادات
+icon: fas fa-certificate
+order: 8
+---
+
+# الشهادات والدورات التدريبية
+
+فيما يلي قائمة بالشهادات والدورات التدريبية التي حصلت عليها:
+
+## الشهادات الأكاديمية
+
+<div class="certificate-container">
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/university1.png" alt="شعار الجامعة">
+    </div>
+    <div class="certificate-details">
+      <h3>بكالوريوس في [التخصص]</h3>
+      <p class="certificate-institution">جامعة [اسم الجامعة]</p>
+      <p class="certificate-date">2015 - 2019</p>
+      <p class="certificate-description">وصف مختصر للشهادة والمواد الرئيسية التي تم دراستها والمهارات المكتسبة.</p>
+    </div>
+  </div>
+  
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/university2.png" alt="شعار الجامعة">
+    </div>
+    <div class="certificate-details">
+      <h3>ماجستير في [التخصص]</h3>
+      <p class="certificate-institution">جامعة [اسم الجامعة]</p>
+      <p class="certificate-date">2019 - 2021</p>
+      <p class="certificate-description">وصف مختصر للشهادة والمواد الرئيسية التي تم دراستها والمهارات المكتسبة.</p>
+    </div>
+  </div>
+</div>
+
+## الشهادات المهنية
+
+<div class="certificate-container">
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/cert1.png" alt="شعار الشهادة">
+    </div>
+    <div class="certificate-details">
+      <h3>شهادة [اسم الشهادة]</h3>
+      <p class="certificate-institution">[اسم المؤسسة المانحة]</p>
+      <p class="certificate-date">يناير 2022</p>
+      <p class="certificate-description">وصف مختصر للشهادة والمهارات المكتسبة منها.</p>
+      <a href="#" class="certificate-link" target="_blank">عرض الشهادة</a>
+    </div>
+  </div>
+  
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/cert2.png" alt="شعار الشهادة">
+    </div>
+    <div class="certificate-details">
+      <h3>شهادة [اسم الشهادة]</h3>
+      <p class="certificate-institution">[اسم المؤسسة المانحة]</p>
+      <p class="certificate-date">مارس 2022</p>
+      <p class="certificate-description">وصف مختصر للشهادة والمهارات المكتسبة منها.</p>
+      <a href="#" class="certificate-link" target="_blank">عرض الشهادة</a>
+    </div>
+  </div>
+  
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/cert3.png" alt="شعار الشهادة">
+    </div>
+    <div class="certificate-details">
+      <h3>شهادة [اسم الشهادة]</h3>
+      <p class="certificate-institution">[اسم المؤسسة المانحة]</p>
+      <p class="certificate-date">يونيو 2022</p>
+      <p class="certificate-description">وصف مختصر للشهادة والمهارات المكتسبة منها.</p>
+      <a href="#" class="certificate-link" target="_blank">عرض الشهادة</a>
+    </div>
+  </div>
+</div>
+
+## الدورات التدريبية
+
+<div class="certificate-container">
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/course1.png" alt="شعار الدورة">
+    </div>
+    <div class="certificate-details">
+      <h3>دورة [اسم الدورة]</h3>
+      <p class="certificate-institution">[اسم المنصة التعليمية]</p>
+      <p class="certificate-date">أغسطس 2022</p>
+      <p class="certificate-description">وصف مختصر للدورة والمهارات المكتسبة منها.</p>
+      <a href="#" class="certificate-link" target="_blank">عرض الشهادة</a>
+    </div>
+  </div>
+  
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/course2.png" alt="شعار الدورة">
+    </div>
+    <div class="certificate-details">
+      <h3>دورة [اسم الدورة]</h3>
+      <p class="certificate-institution">[اسم المنصة التعليمية]</p>
+      <p class="certificate-date">أكتوبر 2022</p>
+      <p class="certificate-description">وصف مختصر للدورة والمهارات المكتسبة منها.</p>
+      <a href="#" class="certificate-link" target="_blank">عرض الشهادة</a>
+    </div>
+  </div>
+  
+  <div class="certificate-item">
+    <div class="certificate-logo">
+      <img src="/assets/img/certificates/course3.png" alt="شعار الدورة">
+    </div>
+    <div class="certificate-details">
+      <h3>دورة [اسم الدورة]</h3>
+      <p class="certificate-institution">[اسم المنصة التعليمية]</p>
+      <p class="certificate-date">ديسمبر 2022</p>
+      <p class="certificate-description">وصف مختصر للدورة والمهارات المكتسبة منها.</p>
+      <a href="#" class="certificate-link" target="_blank">عرض الشهادة</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.certificate-container {
+  margin-bottom: 40px;
+}
+
+.certificate-item {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-logo {
+  flex: 0 0 100px;
+  margin-left: 20px;
+}
+
+.certificate-logo img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.certificate-details {
+  flex: 1;
+}
+
+.certificate-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+
+.certificate-institution {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.certificate-date {
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.certificate-description {
+  margin-bottom: 10px;
+}
+
+.certificate-link {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: var(--link-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.certificate-link:hover {
+  background-color: var(--link-hover-color);
+  text-decoration: none;
+  color: white;
+}
+</style> 

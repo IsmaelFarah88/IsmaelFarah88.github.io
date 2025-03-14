@@ -1,0 +1,60 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="blog-container">
+  {% for post in site.posts %}
+  <div class="blog-post">
+    <div class="blog-image">
+      {% if post.image.path %}
+      <img src="{{ post.image.path | relative_url }}" alt="{{ post.image.alt | default: 'صورة المقال' }}">
+      {% else %}
+      <img src="/assets/img/blog/default-post.jpg" alt="صورة المقال">
+      {% endif %}
+    </div>
+    <div class="blog-content">
+      <h2 class="blog-title">{{ post.title }}</h2>
+      <div class="blog-meta">
+        <span class="blog-date"><i class="fas fa-calendar-alt"></i> {{ post.date | date: "%d %b %Y" }}</span>
+        {% if post.categories.size > 0 %}
+        <span class="blog-category"><i class="fas fa-folder"></i> 
+          {% for category in post.categories %}
+            {{ category }}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </span>
+        {% endif %}
+      </div>
+      <p class="blog-excerpt">
+        {% if post.excerpt %}
+          {{ post.excerpt | strip_html | truncatewords: 30 }}
+        {% else %}
+          {{ post.content | strip_html | truncatewords: 30 }}
+        {% endif %}
+      </p>
+      <a href="{{ post.url | relative_url }}" class="blog-read-more">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% if site.posts.size > 0 %}
+<div class="blog-pagination">
+  {% if site.posts.size > site.paginate %}
+  <a href="#" class="pagination-prev disabled"><i class="fas fa-chevron-right"></i> السابق</a>
+  <a href="#" class="pagination-page active">1</a>
+  <a href="#" class="pagination-page">2</a>
+  <a href="#" class="pagination-next">التالي <i class="fas fa-chevron-left"></i></a>
+  {% endif %}
+</div>
+{% endif %}
+
+## المواضيع الشائعة
+
+<div class="popular-topics">
+  {% assign categories = site.categories | sort %}
+  {% for category in categories %}
+    <a href="{{ '/categories/' | append: category[0] | downcase | replace: ' ', '-' | relative_url }}" class="topic-tag">{{ category[0] }}</a>
+  {% endfor %}
+</div> 
