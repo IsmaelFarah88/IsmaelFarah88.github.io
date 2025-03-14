@@ -1,26 +1,234 @@
----
-layout: home
-# Index page
----
-
-<h1>أهلاً بك في مدونتي الشخصية</h1>
-
-<p>هذه مدونة شخصية أشارك فيها أفكاري ومشاريعي وخبراتي. أتمنى أن تجد فيها ما يفيدك ويلهمك.</p>
-
-<h2>آخر المنشورات</h2>
-
-<ul class="post-list">
-  {% for post in site.posts limit:5 %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h3>
-      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    </li>
-  {% endfor %}
-</ul>
-
-<div class="more-posts">
-  <a href="{{ '/blog/' | relative_url }}" class="btn">عرض جميع المقالات</a>
-</div> 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدونتي الشخصية</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      margin-bottom: 30px;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    
+    header h2 {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    
+    nav {
+      margin-top: 20px;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    nav li {
+      margin-right: 20px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    main {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    
+    .post-list {
+      margin-top: 20px;
+    }
+    
+    .post-item {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .post-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .post-item h3 a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    
+    .post-item h3 a:hover {
+      color: #3498db;
+    }
+    
+    .post-date {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    
+    .post-excerpt {
+      margin-bottom: 15px;
+    }
+    
+    .read-more {
+      display: inline-block;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #2980b9;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .more-posts {
+      margin-top: 30px;
+      text-align: center;
+    }
+    
+    footer {
+      margin-top: 30px;
+      padding: 20px 0;
+      color: #666;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>مدونتي الشخصية</h1>
+      <h2>مدونة شخصية لمشاركة أفكاري ومشاريعي وخبراتي</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="about.html">من أنا</a></li>
+          <li><a href="contact.html">اتصل بي</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <div class="home-content">
+      <h1>أهلاً بك في مدونتي الشخصية</h1>
+      
+      <p>هذه مدونة شخصية أشارك فيها أفكاري ومشاريعي وخبراتي. أتمنى أن تجد فيها ما يفيدك ويلهمك.</p>
+      
+      <h2>آخر المنشورات</h2>
+      
+      <div class="post-list">
+        <div class="post-item">
+          <h3><a href="_posts/2024-03-23-ubuntu-services.html">إدارة الخدمات في أوبنتو: دليل شامل</a></h3>
+          <p class="post-date">2024-03-23</p>
+          <div class="post-excerpt">
+            إدارة الخدمات هي جزء أساسي من إدارة نظام أوبنتو. في هذا المقال، سنتعرف على كيفية إدارة وإعداد الخدمات في نظام أوبنتو.
+          </div>
+          <a href="_posts/2024-03-23-ubuntu-services.html" class="read-more">قراءة المزيد</a>
+        </div>
+        
+        <div class="post-item">
+          <h3><a href="_posts/2024-03-22-ubuntu-networking.html">إدارة الشبكات في أوبنتو: دليل شامل</a></h3>
+          <p class="post-date">2024-03-22</p>
+          <div class="post-excerpt">
+            في هذا المقال، سنتعرف على كيفية إدارة الشبكات في نظام أوبنتو، بما في ذلك إعدادات الشبكة الأساسية وإدارة الاتصال اللاسلكي وإدارة DNS وVPN.
+          </div>
+          <a href="_posts/2024-03-22-ubuntu-networking.html" class="read-more">قراءة المزيد</a>
+        </div>
+        
+        <div class="post-item">
+          <h3><a href="_posts/2024-03-21-ubuntu-security.html">تأمين نظام أوبنتو: حماية نظامك من التهديدات</a></h3>
+          <p class="post-date">2024-03-21</p>
+          <div class="post-excerpt">
+            في هذا المقال، سنتعرف على كيفية تأمين نظام أوبنتو وحمايته من التهديدات المختلفة، بما في ذلك تحديث النظام وإعداد جدار الحماية وإدارة كلمات المرور.
+          </div>
+          <a href="_posts/2024-03-21-ubuntu-security.html" class="read-more">قراءة المزيد</a>
+        </div>
+        
+        <div class="post-item">
+          <h3><a href="_posts/2024-03-20-ubuntu-storage-performance.html">إدارة مساحة التخزين وتحسين الأداء في أوبنتو</a></h3>
+          <p class="post-date">2024-03-20</p>
+          <div class="post-excerpt">
+            في هذا المقال، سنتعرف على كيفية إدارة مساحة التخزين وتحسين أداء نظام أوبنتو، بما في ذلك تنظيف النظام وتحسين القرص الصلب وتحسين بدء التشغيل.
+          </div>
+          <a href="_posts/2024-03-20-ubuntu-storage-performance.html" class="read-more">قراءة المزيد</a>
+        </div>
+        
+        <div class="post-item">
+          <h3><a href="_posts/2024-03-19-ubuntu-backup.html">النسخ الاحتياطي في أوبنتو: حماية بياناتك</a></h3>
+          <p class="post-date">2024-03-19</p>
+          <div class="post-excerpt">
+            في هذا المقال، سنتعرف على كيفية عمل نسخ احتياطية في نظام أوبنتو لحماية بياناتك، بما في ذلك النسخ الاحتياطي للملفات والنظام والنسخ الاحتياطي التلقائي والسحابي.
+          </div>
+          <a href="_posts/2024-03-19-ubuntu-backup.html" class="read-more">قراءة المزيد</a>
+        </div>
+      </div>
+      
+      <div class="more-posts">
+        <a href="blog.html" class="btn">عرض جميع المقالات</a>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Ismael farah. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+</body>
+</html> 

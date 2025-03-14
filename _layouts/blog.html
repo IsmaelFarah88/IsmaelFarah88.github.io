@@ -1,42 +1,24 @@
 ---
-layout: page
+layout: default
 ---
 
-{{ content }}
-
-<div class="blog-container">
-  {% for post in site.posts %}
-  <div class="blog-post">
-    <div class="blog-image">
-      {% if post.image.path %}
-      <img src="{{ post.image.path | relative_url }}" alt="{{ post.image.alt | default: 'صورة المقال' }}">
-      {% else %}
-      <img src="/assets/img/blog/default-post.jpg" alt="صورة المقال">
-      {% endif %}
-    </div>
-    <div class="blog-content">
-      <h2 class="blog-title">{{ post.title }}</h2>
-      <div class="blog-meta">
-        <span class="blog-date"><i class="fas fa-calendar-alt"></i> {{ post.date | date: "%d %b %Y" }}</span>
-        {% if post.categories.size > 0 %}
-        <span class="blog-category"><i class="fas fa-folder"></i> 
-          {% for category in post.categories %}
-            {{ category }}{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </span>
-        {% endif %}
+<div class="blog">
+  <h1>{{ page.title }}</h1>
+  
+  {{ content }}
+  
+  <div class="post-list">
+    {% for post in site.posts %}
+      <div class="post-item">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 200 }}
+        </div>
+        <a href="{{ post.url | relative_url }}" class="read-more">قراءة المزيد</a>
       </div>
-      <p class="blog-excerpt">
-        {% if post.excerpt %}
-          {{ post.excerpt | strip_html | truncatewords: 30 }}
-        {% else %}
-          {{ post.content | strip_html | truncatewords: 30 }}
-        {% endif %}
-      </p>
-      <a href="{{ post.url | relative_url }}" class="blog-read-more">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
-    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 {% if site.posts.size > 0 %}
